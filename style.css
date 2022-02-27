@@ -48,25 +48,53 @@ a {
   padding-right: 6%;
 }
 
+#page_title{
+  text-align: center;
+}
+
+
 #title {
   text-align: center;
-  position: relative;
-  color: #ffffff;
-  font-size: 30px;
+  color: #fff;
+  font-size: 60px;
   font-weight: 900;
   text-transform: uppercase;
   font-style: italic;
+  margin-bottom: -10px;
 }
 
-
-#general_infos {
+#sub_title{
+  font-family: "Lucida Handwriting", cursive;
   text-align: center;
-  background-color: #0d1526;
-  color: #ffffff;
   font-size: 20px;
+  color: #aaa;
+
 }
+
+#find_more{
+  color: #abc;
+}
+
+
+#general_infos{
+  background-color:#151526;
+  color: #ffcfbf;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+#social_media {
+  background-color: #0d1526;
+  text-align: center;
+}
+
 
 .social_logo{
   width: 40px;
   height: auto;
+}
+
+.social_logo:hover{
+  background-color:#2f3748;
 }
