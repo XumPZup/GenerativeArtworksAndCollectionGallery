@@ -90,6 +90,32 @@ a {
 }
 
 
+#aboutTitle {
+  background-color: #0d1526;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+
+#about{
+  background-color:#151526;
+  color: #abc;
+  font-family: "Lucida Handwriting", cursive;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+#social_media1 {
+  background-color: #0d1526;
+  text-align: center;
+}
+
+
 .social_logo{
   width: 40px;
   height: auto;
