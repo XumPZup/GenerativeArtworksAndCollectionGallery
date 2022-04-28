@@ -1,0 +1,79 @@
+html {
+  background-color: #06090f;
+}
+
+a {
+  text-decoration: None;
+}
+
+#page_title{
+  text-align: center;
+}
+
+
+#title {
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-bottom: -10px;
+}
+
+
+
+#about{
+  background-color:#151526;
+  color: #abc;
+  font-family: "Lucida Handwriting", cursive;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+.link:hover{
+  background-color:#2f3748;
+}
+
+
+video{
+	padding-top:3em;
+	padding-bottom: 3em;
+	width: 70%;
+	height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+input:hover{
+  cursor: pointer;
+}
+
+
+input{
+	height: 4em;
+  margin:6px;
+  background-color: #0d1526;
+  border: #0d1526;
+  text-align: center;
+  color: #abc;
+  font-family: "Lucida Handwriting", cursive;
+  font-size: 24px;
+  border-radius: 12px;
+  width: 20em;
+}
+
+
+#links{
+   text-align:center;
+}
+
+
+#video{
+  text-align: center; 
+  background-color: #000;
+}
