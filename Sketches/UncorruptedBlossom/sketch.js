@@ -4,83 +4,83 @@ var flower_count = 1;
 
 
 function angle_corruption(){
-	col =[0,0,0]//[random(100, 180), random(150, 230), 0];
+	col =[0, 0, 0];
 	for (var i=0; i<10; i++){
 		////////////////////// TL ////////////////////////////////////////
-		var g = new Splinter(0, 0, random(100),random(random(HALF_PI)), col);
+		var g = new Splinter(0, 0, random(100), random(HALF_PI), col);
 		g.scale = random(1.5, 2);
 		g.alpha = 40;
 		g.weight = random(W*0.034, W*0.045);
 		g.weight_inc = .99;
 		d.push(g);
 		///////////////////// TM //////////////////////////////////////////
-		var g = new Splinter(width/3, 0, random(100),random(random(PI)), col);
+		var g = new Splinter(width/3, 0, random(100), random(PI), col);
 		g.scale = random(1.5, 2);
 		g.alpha = 40;
 		g.weight = random(W*0.034, W*0.045);
 		g.weight_inc = .99;
 		d.push(g);
-		var g = new Splinter(2*width/3, 0, random(100),random(random(PI)), col);
+		var g = new Splinter(2*width/3, 0, random(100), random(PI), col);
 		g.scale = random(1.5, 2);
 		g.alpha = 40;
 		g.weight = random(W*0.034, W*0.045);
 		g.weight_inc = .99;
 		d.push(g);
 		//////////////////// TR ///////////////////////////////////////////
-		var g = new Splinter(width, 0, random(100),random(random(HALF_PI, PI)), col);
+		var g = new Splinter(width, 0, random(100), random(HALF_PI, PI), col);
 		g.scale = random(1.5, 2);
 		g.alpha = 40;
 		g.weight = random(W*0.034, W*0.045);
 		g.weight_inc = .99;
 		d.push(g);
 		/////////////////// RM ////////////////////////////////////////////
-		var g = new Splinter(width, height/3, random(100),random(random(HALF_PI, PI + HALF_PI)), col);
+		var g = new Splinter(width, height/3, random(100), random(HALF_PI, PI + HALF_PI), col);
 		g.scale = random(1.5, 2);
 		g.alpha = 40;
 		g.weight = random(W*0.034, W*0.045);
 		g.weight_inc = .99;
 		d.push(g);
-		var g = new Splinter(width, 2*height/3, random(100),random(random(HALF_PI, PI + HALF_PI)), col);
+		var g = new Splinter(width, 2*height/3, random(100), random(HALF_PI, PI + HALF_PI), col);
 		g.scale = random(1.5, 2);
 		g.alpha = 40;
 		g.weight = random(W*0.034, W*0.045);
 		g.weight_inc = .99;
 		d.push(g);
 		/////////////////// BR ////////////////////////////////////////////
-		var g = new Splinter(width, height, random(100),random(random(PI, PI+HALF_PI)), col);
+		var g = new Splinter(width, height, random(100), random(PI, PI+HALF_PI), col);
 		g.scale = random(1.5, 2);
 		g.alpha = 40;
 		g.weight = random(W*0.034, W*0.045);
 		g.weight_inc = .99;
 		d.push(g);
 		//////////////////// BM /////////////////////////////////////
-		var g = new Splinter(width/3, height, random(100),0, col)//random(random(-PI, 0)), col);
+		var g = new Splinter(width/3, height, random(100), random(-PI, 0), col);
 		g.scale = random(1.5, 2);
 		g.alpha = 40;
 		g.weight = random(W*0.034, W*0.045);
 		g.weight_inc = .99;
 		d.push(g);
-		var g = new Splinter(2*width/3, height, random(100),random(random(-PI, 0)), col);
+		var g = new Splinter(2*width/3, height, random(100), random(-PI, 0), col);
 		g.scale = random(1.5, 2);
 		g.alpha = 40;
 		g.weight = random(W*0.034, W*0.045);
 		g.weight_inc = .99;
 		d.push(g);
 		/////////////////// BL /////////////////////////////////////
-		var g = new Splinter(0, height, random(100),random(random(0, -HALF_PI)), col);
+		var g = new Splinter(0, height, random(100), random(0, -HALF_PI), col);
 		g.scale = random(1.5, 2);
 		g.alpha = 40;
 		g.weight = random(W*0.034, W*0.045);
 		g.weight_inc = .99;
 		d.push(g);
 		/////////////////// LM ////////////////////////////////////
-		var g = new Splinter(0, height/3, random(100),random(random(-HALF_PI, HALF_PI)), col);
+		var g = new Splinter(0, height/3, random(100), random(-HALF_PI, HALF_PI), col);
 		g.scale = random(1.5, 2);
 		g.alpha = 40;
 		g.weight = random(W*0.034, W*0.045);
 		g.weight_inc = .99;
 		d.push(g);
-		var g = new Splinter(0, 2*height/3, random(100),random(random(-HALF_PI, HALF_PI)), col);
+		var g = new Splinter(0, 2*height/3, random(100), random(-HALF_PI, HALF_PI), col);
 		g.scale = random(1.5, 2);
 		g.alpha = 40;
 		g.weight = random(W*0.034, W*0.045);
@@ -186,7 +186,7 @@ function Composition(x, y, h){
 
 	// Grass
 	for(var j=0; j<TWO_PI; j+=PI/14){
-		col =[0,0,0]//[random(100, 180), random(150, 230), 0];
+		col =[0, 0, 0];
 		var g = new Splinter(x, y, random(100), j, col);
 		g.scale = 2;
 		g.alpha = 10;
@@ -381,6 +381,6 @@ function QuadraticPetal(x, y, a, h, col, inc){
 
 		quadraticVertex(xL, yL, this.x, this.y);
 		endShape();
-		this.w += this.inc//this.h/200;
+		this.w += this.inc;
 	}
 }
