@@ -260,29 +260,7 @@ function Composition(x, y, h){
 			this.grass_state = Math.floor(
 				this.grass_state / this.grass.length);
 		}
-
 	}
-
-
-	this.basic_update = () => {
-		if(!this.state){
-			return 0;
-		}
-		this.state = 0;
-		for(var i=0; i<this.petals.length; i++){
-			this.petals[i].update();
-			this.state += this.petals[i].state;
-		}
-		for(var i=0; i<this.splinters.length; i++){
-			this.splinters[i].update();
-			this.state += this.splinters[i].state;
-		}
-		for(var i=0; i<this.grass.length; i++){
-			this.grass[i].update();
-			this.state += this.grass[i].state;
-		}
-	}
-
 }
 
 
